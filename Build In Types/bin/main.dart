@@ -34,4 +34,28 @@ main(List<String> arguments) {
 
   //return closer double
   print(num4.roundToDouble());
+
+  //return num as double
+  print(num1.toDouble());
+
+  //return num as integer
+  print(num4.toDouble());
+
+  //return num as string
+  print(num2.toString());
+
+  //return exponential digit
+  print(num1.toStringAsExponential(2));
+
+  //return decimal point
+  print(num3.toStringAsFixed(1));
+
+  //precision
+  print(num3.toStringAsPrecision(3));
+
+  //truncate
+  print(num3.truncate());
+
+  //double truncate
+  print(num4.truncateToDouble());
 }
