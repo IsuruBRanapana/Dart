@@ -13,4 +13,25 @@ main(List<String> arguments) {
 
   //return the least double value
   print(num3.ceilToDouble());
+
+  //num clamp in range
+  print(num1.clamp(1, 40));
+
+  //compare with a number
+  print(num2.compareTo(60));
+
+  //return greatest integer
+  print(num3.floor());
+
+  //return greatest double integer
+  print(num4.floorToDouble());
+
+  //reminder
+  print(num2.remainder(6));
+
+  //return the integer closer
+  print(num3.round());
+
+  //return closer double
+  print(num4.roundToDouble());
 }
