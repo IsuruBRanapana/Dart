@@ -66,4 +66,12 @@ main(List<String> arguments) {
   //string -> double
   var onePone = double.parse('1.1');
   assert(onePone==1.1);
+
+  //int->String
+  String oneAS=1.toString();
+  assert(oneAS=='1');
+
+  //double->String
+  String piAS=3.14.toStringAsFixed(2);
+  assert(piAS=='3.14');
 }
