@@ -58,4 +58,12 @@ main(List<String> arguments) {
 
   //double truncate
   print(num4.truncateToDouble());
+
+  //string -> int
+  var one=int.parse('1');
+  assert(one==1);
+
+  //string -> double
+  var onePone = double.parse('1.1');
+  assert(onePone==1.1);
 }
