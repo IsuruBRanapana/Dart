@@ -50,4 +50,11 @@ void li(){
   //clear all
   fruit.clear();
   print(fruit);
+
+  //genaric
+
+  var names=List<String>();
+  //can add only strings can't add another data type
+  names.addAll(['A','B','C']);
+  print(names);
 }
