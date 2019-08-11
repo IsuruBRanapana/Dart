@@ -1,5 +1,6 @@
 import 'numbers.dart';
 import 'words.dart';
+import 'lists.dart';
 
  void main() {
    print('Numbers');
@@ -14,4 +15,11 @@ import 'words.dart';
    print("");
    print("");
    w1();
+
+   print(' ');
+   print(' ');
+   print('Lists');
+   print("");
+   print("");
+   li();
  }
