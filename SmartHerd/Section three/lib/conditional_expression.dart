@@ -28,4 +28,12 @@ void f2(){
   //above one using conditional expression
   smaller=x<y ? x : y;
   print('$smaller is smaller one');
+
+  //second type of conditional expression
+  String name="Tom";
+  String p1= name ?? "guest";
+  print(p1);
+  name = null;
+  p1= name ?? "guest";
+  print(p1);
 }
