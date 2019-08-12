@@ -1,3 +1,4 @@
+import 'maps.dart';
 import 'numbers.dart';
 import 'words.dart';
 import 'lists.dart';
@@ -30,4 +31,11 @@ import 'sets.dart';
    print("");
    print("");
    s1();
+
+   print(' ');
+   print(' ');
+   print('Sets');
+   print("");
+   print("");
+   mp1();
  }
