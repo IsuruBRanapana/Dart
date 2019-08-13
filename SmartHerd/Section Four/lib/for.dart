@@ -10,4 +10,13 @@ void f1(){
   for(var j=1;j<=10;j++){
     j%2==0?print(j):null;
   }
+
+
+  print('');
+  print('');
+  //for ..in loop
+  List p=['A','B','C','D'];
+  for(String q in p){
+    print(q);
+  }
 }
