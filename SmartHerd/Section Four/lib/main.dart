@@ -1,4 +1,5 @@
 import 'for.dart';
+import 'while.dart';
 void main() {
   print('');
   print('');
@@ -6,4 +7,11 @@ void main() {
   print('');
   print('');
   f1();
+
+  print('');
+  print('');
+  print('WHILE loop');
+  print('');
+  print('');
+  f2();
 }
