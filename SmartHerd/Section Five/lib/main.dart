@@ -1,16 +1,39 @@
 void main() {
   //must call the functions
   findArea();
+  print('');
+
   findSum(85, 145);
+  print('');
+
   int fMul=findMul(7, 12);
   print(fMul);
+  print('');
+
   findP(2, 8);
+  print('');
+
   int a=arr(8, 6);
   print(a);
+  print('');
+
   findA(7, 78, 789);
+  print('');
+
   findB("abcd","efgh");
+  print('');
+
   findVol(7,h:9,b:3);
+  print('');
+
   findVol(6,b:3,h:15);
+  print('');
+
+  findV(7, 11);
+  print('');
+
+  findV(4, 8, c:13);
+  print('');
 }
 
 
@@ -52,11 +75,20 @@ void findB(String a, [String b, String c]){
   print(c);
 }
 
-//named parameters
+//optional named parameters
 void findVol(int l, {int b, int h}){
   print('The length is $l');
   print('The height is $h');
   print('The breath is $b');
 
   print('The volume is ${l*h*b}');
+}
+
+//optional default parameters
+void findV(int a, int b, {int c=15}){
+  print('a is $a');
+  print('b is $b');
+  print('c is $c');
+  
+  print('The volume is ${a*b*c}');
 }
