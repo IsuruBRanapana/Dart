@@ -9,6 +9,8 @@ void main() {
   print(a);
   findA(7, 78, 789);
   findB("abcd","efgh");
+  findVol(7,h:9,b:3);
+  findVol(6,b:3,h:15);
 }
 
 
@@ -48,4 +50,13 @@ void findB(String a, [String b, String c]){
   print(a);
   print(b);
   print(c);
+}
+
+//named parameters
+void findVol(int l, {int b, int h}){
+  print('The length is $l');
+  print('The height is $h');
+  print('The breath is $b');
+
+  print('The volume is ${l*h*b}');
 }
