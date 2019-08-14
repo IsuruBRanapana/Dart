@@ -4,6 +4,9 @@ void main() {
   findSum(85, 145);
   int fMul=findMul(7, 12);
   print(fMul);
+  findP(2, 8);
+  int a=arr(8, 6);
+  print(a);
 }
 
 
@@ -26,3 +29,7 @@ int findMul(int a, int b){
   int c=a*b;
   return c;
 }
+
+//function as expression
+void findP(int l, int b)=>print('The area is ${2*(l*b)}');
+int arr(int l, int b)=>l*b;
