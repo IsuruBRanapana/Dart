@@ -1,6 +1,7 @@
 void main() {
   //must call the functions
   findArea();
+  findSum(85, 145);
 }
 
 
@@ -10,4 +11,10 @@ void findArea(){
   int b=5;
   int area = a*b;
   print('The area is $area');
+}
+
+//with parameters
+void findSum(int x, int y){
+  int z=x+y;
+  print('The sum of $x and $y is $z');
 }
