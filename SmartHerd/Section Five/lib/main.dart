@@ -7,6 +7,8 @@ void main() {
   findP(2, 8);
   int a=arr(8, 6);
   print(a);
+  findA(7, 78, 789);
+  findB("abcd","efgh");
 }
 
 
@@ -33,3 +35,17 @@ int findMul(int a, int b){
 //function as expression
 void findP(int l, int b)=>print('The area is ${2*(l*b)}');
 int arr(int l, int b)=>l*b;
+
+//required parameters, when calling a b c must enter
+void findA(int a, int b, int c){
+  print(a);
+  print(b);
+  print(c);
+}
+
+//optional positional paramenters, when calling only a is must
+void findB(String a, [String b, String c]){
+  print(a);
+  print(b);
+  print(c);
+}
