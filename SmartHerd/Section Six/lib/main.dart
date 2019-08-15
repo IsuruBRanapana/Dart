@@ -26,4 +26,24 @@ void main() {
     print('Exception is $e');
     print('StackTrace is \n $s');
   }
+
+  print('Case four');
+  //No matter exception is thrown or not, finnaly is occur
+  try{
+    int result = 12~/0;
+    print('Result is $result');
+  }catch(e){
+    print('Exception is $e');
+  }finally{
+    print('No matter');
+  }
+
+  try{
+    int result = 12~/3;
+    print('Result is $result');
+  }catch(e){
+    print('Exception is $e');
+  }finally{
+    print('No matter');
+  }
 }
