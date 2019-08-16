@@ -46,4 +46,28 @@ void main() {
   }finally{
     print('No matter');
   }
+
+  //case five create own exception and handle it
+  print('');
+  print('Case five');
+
+  try{
+    depositeMoney(-200);
+  }catch (e){
+    print(e.errorMassage());
+  }
+}
+
+//create exceptin class
+class DepositeException implements Exception{
+  String errorMassage(){
+    return 'You can not enter amount less than 0';
+  }
+}
+
+//create method to call exception
+void depositeMoney(int amount){
+  if(amount<0){
+    throw new DepositeException();
+  }
 }
