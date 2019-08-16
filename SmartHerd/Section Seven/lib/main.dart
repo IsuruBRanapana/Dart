@@ -1,4 +1,4 @@
- void main() {
+void main() {
    //make objects
    var st1= new Student();
    st1.id = 45;
@@ -12,6 +12,23 @@
    st2.name='Mary';
    print('Id is ${st2.id} and Name is ${st2.name}');
    st2.sleep();
+
+   //default constructors
+   print('');
+   var b1=Box();
+   b1.height=15;
+   b1.length=78;
+   print("h is ${b1.height} and l is ${b1.length}" );
+   b1.a();
+   b1.area();
+
+   print('');
+   var b2=Box();
+   b2.height=5;
+   b2.length=178;
+   print("h is ${b2.height} and l is ${b2.length}" );
+   b2.a();
+   b2.area();
  }
 
  //define a class
@@ -32,4 +49,21 @@
    void sleep(){
      print('${this.name} in now sleeping');
    }
- }
+   
+  }
+
+  //for default constructors
+  class Box{
+    int length;
+    int height;
+
+    Box(){
+      print('This is default constructor');
+    }
+    void a(){
+      print('abcd');
+    }
+    void area(){
+      print('Area');
+    }
+  }
