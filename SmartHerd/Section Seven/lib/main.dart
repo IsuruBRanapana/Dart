@@ -36,7 +36,15 @@ void main() {
    print("radius is ${c1.radi} and Name is ${c1.name}" );
    c1.area();
 
-   
+   //Named constructor
+   print('');
+   var s1=Std.Sir();
+   s1.id=123;
+   s1.name='ADS';
+   print("Id is ${s1.id} and name is ${s1.name}" );
+
+   var s2=Std.Mam(45, 'mmm');
+   print("Id is ${s2.id} and Name is ${s2.name}" );
  }
 
  //define a class
@@ -76,6 +84,7 @@ void main() {
     }
   }
 
+//for parameterized constructor
   class circle{
     int radi;
     String name;
@@ -87,3 +96,16 @@ void main() {
       print(arr);
     }
   }
+
+//for named constructor
+  class Std{
+    int id;
+    String name;
+    //named constructor
+    Std.Sir(){
+      print("This is Sir Constructor of Std");
+    }
+    Std.Mam(this.id,this.name){
+      print('This is Mam constructor of Mam');
+    }
+  }  
