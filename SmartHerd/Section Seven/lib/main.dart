@@ -29,6 +29,14 @@ void main() {
    print("h is ${b2.height} and l is ${b2.length}" );
    b2.a();
    b2.area();
+   
+   //parameterized constructors
+   print('');
+   var c1=circle(7,'ABCD');
+   print("radius is ${c1.radi} and Name is ${c1.name}" );
+   c1.area();
+
+   
  }
 
  //define a class
@@ -65,5 +73,17 @@ void main() {
     }
     void area(){
       print('Area');
+    }
+  }
+
+  class circle{
+    int radi;
+    String name;
+
+    circle(this.radi,this.name);
+
+    void area(){
+      var arr=radi*radi*(22/7);
+      print(arr);
     }
   }
