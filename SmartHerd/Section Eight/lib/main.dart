@@ -33,6 +33,12 @@ void main() {
   c1.jump();
   c1.meaw();
   c1.run();
+
+  print('');
+  print('Method Overriding');
+  var c2=Ca();
+  print(c2.col);
+  c2.ea();
 }
 
 class Student{
@@ -85,5 +91,21 @@ class Cat extends Animal{
 
   void meaw(){
     print('Meaw!');
+  }
+}
+
+//method overriding
+class Ani{
+  String col='black';
+  void ea(){
+    print('animal is eating');
+  }
+}
+
+class Ca extends Ani{
+  String col="White";
+  void ea(){
+    print('Cat is eating');
+    super.ea();
   }
 }
