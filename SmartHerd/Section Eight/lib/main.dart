@@ -8,6 +8,31 @@ void main() {
 
   st1.average=78;
   print(st1.average);
+
+  print('');
+  print('Inheritance');
+  var d1=Dog();
+  d1.age=5;
+  d1.breed="al";
+  d1.color='White';
+  d1.height=6;
+  d1.name='Tommy';
+  print('${d1.age},${d1.breed},${d1.color},${d1.height},${d1.name}');
+  d1.bark();
+  d1.eat();
+  d1.run();
+
+  print('');
+  var c1=Cat();
+  c1.age=3;
+  c1.color='brown';
+  c1.eyeColor='blue';
+  c1.name='catty';
+  print('${c1.age},${c1.color},${c1.eyeColor},${c1.name}');
+  c1.eat();
+  c1.jump();
+  c1.meaw();
+  c1.run();
 }
 
 class Student{
@@ -26,4 +51,39 @@ class Student{
 
   void set average(double a) => _ave=(a+45)/2;
   double get average => _ave;
+}
+
+//inheritance
+class Animal{
+  String color;
+  int age;
+  String name;
+
+  void eat(){
+    print('Eat!');
+  }
+  void run(){
+    print('Run!');
+  }
+}
+
+class Dog extends Animal{
+  String breed;
+  int height;
+
+  void bark(){
+    print('bark!');
+  }
+}
+
+class Cat extends Animal{
+  String eyeColor;
+
+  void jump(){
+    print('Jump!');
+  }
+
+  void meaw(){
+    print('Meaw!');
+  }
 }
