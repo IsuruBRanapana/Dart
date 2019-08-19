@@ -15,6 +15,13 @@ void main(){
   var c1=Circle();
   c1.draw();
   c1.myNormal();
+
+  print('');
+  //interface
+  var tv=Television();
+  tv.anMethod();
+  tv.volumeDown();
+  tv.volumeUp();
 }
 
 // default class constructor
@@ -59,5 +66,33 @@ class Rectangle extends Shape{
 class Circle extends Shape{
   void draw(){
     print('Draw CIrcle');
+  }
+}
+
+//Interfaces
+class Remote{
+  void volumeDown(){
+    print('_________ - Volume Down by Remote - __________');
+  }
+  void volumeUp(){
+    print('_________ - Volume Up by Remote - __________');
+  }
+}
+ 
+class AnotherMethod{
+  void anMethod(){
+    print('Another Method');
+  }
+}
+
+class Television implements Remote, AnotherMethod{
+  void volumeDown(){
+    print('_________ - Volume Down by TV - __________');
+  }
+  void volumeUp(){
+    print('_________ - Volume Up by TV - __________');
+  }
+  void anMethod(){
+    print('Another Method TV');
   }
 }
