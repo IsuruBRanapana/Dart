@@ -22,6 +22,13 @@ void main(){
   tv.anMethod();
   tv.volumeDown();
   tv.volumeUp();
+
+  print('');
+  //Static method and variable
+  var c2=CircleAB();
+  c2.normalFunction();
+  //c2.CalculateArea() not allowed because it is Static method
+  CircleAB.calculateArea();
 }
 
 // default class constructor
@@ -95,4 +102,28 @@ class Television implements Remote, AnotherMethod{
   void anMethod(){
     print('Another Method TV');
   }
+}
+
+//static methods and variables
+class CircleAB{
+  static const double pi = 3.14; //static variable
+  static int maxRadius=5;  //static variable
+
+  int x=45; //normal variable
+
+  static void calculateArea(){
+    print('Calc Area');
+    print(pi);
+    print(CircleAB.maxRadius); //CircleAB isn't must
+  }
+
+  void normalFunction(){
+    print(this.x);
+    print(CircleAB.maxRadius);
+    print(CircleAB.pi);
+    print(maxRadius);
+    print(pi);
+  }
+
+
 }
