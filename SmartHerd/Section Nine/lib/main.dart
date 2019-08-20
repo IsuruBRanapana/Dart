@@ -21,9 +21,20 @@ void main(){
   //calling
   twoNumbers1(75,85);
   print(number1(8));
+
+  //calling higher level function
+  someFunction('Hello', twoNumbers1);
 }
 
 //normal function
 void addTwoNumbers(int a, int b){
   print(a+b);
 }
+
+//higher level function
+//accept function
+void someFunction(String abc,Function myFunction1){
+  print(abc);
+  myFunction1(4,7);
+}
+
