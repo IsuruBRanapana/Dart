@@ -21,9 +21,13 @@ void main(){
   //calling
   twoNumbers1(75,85);
   print(number1(8));
+  print('');
 
   //calling higher level function
   someFunction('Hello', twoNumbers1);
+
+  var x = taskToP();
+  print(x(42));
 }
 
 //normal function
@@ -37,4 +41,10 @@ void someFunction(String abc,Function myFunction1){
   print(abc);
   myFunction1(4,7);
 }
+
+Function taskToP(){
+  var number2 = (int num1) => num1*7;
+  return number2;
+}
+
 
