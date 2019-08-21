@@ -28,6 +28,17 @@ void main(){
 
   var x = taskToP();
   print(x(42));
+
+  //closure
+  print('');
+  String message = "Hello world";
+  Function showMessage = (){
+    message = 'Hi world';
+    print(message);
+  };
+
+  //calling showMassage
+  showMessage();
 }
 
 //normal function
@@ -46,5 +57,7 @@ Function taskToP(){
   var number2 = (int num1) => num1*7;
   return number2;
 }
+
+
 
 
