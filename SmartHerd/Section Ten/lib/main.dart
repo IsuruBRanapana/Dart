@@ -18,4 +18,22 @@ void main(){
 
   //using lambda expression
   numbersSet.forEach((int element)=> print(element));
+
+
+  //maps
+  Map <String,String> fruits =Map();
+  fruits['Banana']="yellow";
+  fruits['gauva']='green';
+
+  //print
+  print(fruits['banana']);
+
+  print('');
+  for (String value in fruits.values){
+    print(value);
+  }
+
+  print('');
+
+  fruits.forEach((key , value )=> print("key $key and value $value "));
 }
