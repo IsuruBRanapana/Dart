@@ -39,6 +39,24 @@ void main(){
 
   //calling showMassage
   showMessage();
+
+  //closure
+  Function speak =(){
+    String msg = '1234 Dart';
+    Function say = (){
+      msg = '4567 Flutter';
+      print(msg);
+    };
+    return say;
+  };
+
+  //calling speak
+  var y = speak();
+  y();
+
+  Function z=speak();
+  z();
+
 }
 
 //normal function
